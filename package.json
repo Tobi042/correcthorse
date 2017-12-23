@@ -1,5 +1,5 @@
 {
-  "name": "correcthorse",
+  "name": "secure-correcthorse",
   "version": "1.0.0",
   "description": "See XKCD for reference!",
   "main": "correcthorse.js",
@@ -8,12 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bevacqua/correcthorse.git"
+    "url": "https://github.com/Tobi042/secure-correcthorse.git"
   },
-  "author": "Nicolas Bevacqua <nicolasbevacqua@gmail.com> (http://bevacqua.io/)",
+  "author": "Tobias Theobald <tobitheo@gmail.com>, originally by Nicolas Bevacqua <nicolasbevacqua@gmail.com> (http://bevacqua.io/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bevacqua/correcthorse/issues"
+    "url": "https://github.com/Tobi042/secure-correcthorse/issues"
   },
-  "homepage": "https://github.com/bevacqua/correcthorse"
+  "homepage": "https://github.com/Tobi042/secure-correcthorse",
+  "dependencies": {
+    "asyncawait": "^1.0.6",
+    "random-number-csprng": "^1.0.2"
+  }
 }

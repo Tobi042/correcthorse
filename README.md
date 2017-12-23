@@ -7,23 +7,28 @@
 # Install
 
 ```shell
-npm install correcthorse --save
+npm install git+https://github.com/Tobi042/secure-correcthorse.git --save
 ```
 
 # `correcthorse(options?)`
 
-You'll get back a random strong and readable password
+You'll get back a Promise resolving to a random, strong and readable password
 
 ```js
 var correcthorse = require('correcthorse');
-correcthorse();
-// <- 'correct-horse-battery-staple'
+correcthorse().then(function(password) {
+  console.log(password)
+  // <- 'correct-horse-battery-staple'
+});
 ```
 
 You can set a couple of options.
 
-- `length` is the minimum character length allowed
-- `words` is the minimum word count allowed
+- `length` is the minimum character length allowed (default: 16)
+- `words` is the minimum word count allowed (default: 4)
+- `separator` is the separator string used between random words (default: '-')
+- `maxFails` is the maximum number of times the PRNG library may fail before we stop retrying (default: 10)
+
 
 # CLI
 

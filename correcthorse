@@ -4,4 +4,6 @@
 
 var correcthorse = require('./');
 
-console.log(correcthorse());
+correcthorse().then(function (password) {
+  console.log(password);
+});
